@@ -1,0 +1,21 @@
+!!!
+== <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+%html
+  %head
+    %meta{:"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8" }
+    %title Solresol
+    = stylesheets "blueprint/screen", :media => "screen, projection"
+    = stylesheets "blueprint/print", :media => "print"
+    == <!--[if IE]>
+    = stylesheets "blueprint/ie", :media => "screen, projection"
+    == <![endif]-->
+    = stylesheets
+
+    = javascripts('jquery', 'jquery-ui', 'jquery.swfobject.min')
+  %body
+    %div.container
+      = yield
+    
+      %div#footer
+        2009 by Zeke Sikelianos. Find more interesting projects at 
+        = link "zeke.sikelianos.com", "http://zeke.sikelianos.com"
